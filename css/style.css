@@ -1,1 +1,202 @@
-@import url("./reset.css");
+@import url("/reset.css");
+
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(187, 167, 201);
+}
+
+/* Home Page Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    align-items: center;
+}
+
+.header {
+    border-bottom: 8px solid purple;
+    margin-bottom: 3.2rem;
+}
+
+.header_logo {
+    padding: 1.6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_logo-pic img {
+    border-radius: 50%;
+    border: 1px solid purple;
+    width: 100%;
+    max-width: 420px;
+}
+
+h1 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 1;
+  margin: 0 0 1rem;  
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    /*border: 1px solid purple;*/
+    border-radius: 10px;
+    /*box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
+    max-width: 800px;
+    /*text-align: center;*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rescue-pic img {
+    top:20%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid purple;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    gap: 10px;
+}
+
+.btn  {
+    background-color: rgb(196, 185, 204);
+    border: none;
+    color: purple;
+    padding: 1rem;
+    border-radius: 10px;
+    justify-content: space-between;
+    border: 1px solid purple;
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dog-quote, .dog-quotes {
+    border: 1px solid purple;
+    top: 20%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-top: 8px solid purple;
+    padding: 20px;
+}
+
+@media (min-width:500px) {
+
+    .header_logo-pic img {
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .main h1 {
+        /*flex-direction: column*/
+        max-width: 500px;
+        justify-content: center;
+        display: flex;
+        padding-right: 20px;
+    }
+
+    section.container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rescue-pic img {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+    }
+
+    .btn-container  {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .btn  {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .dog-quote, .dog-quotes {
+        align-items: center;
+    }
+
+    .footer {
+        padding: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main h1 {
+        flex-direction: row;
+        max-width: 768px;
+        justify-content: center;
+    }
+
+    .header_logo-pic img {
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    section.container {
+        display: flex;
+        /*flex-direction: column;*/
+        align-items: center;
+        /*justify-content: center;*/
+    }
+
+    .rescue-pic img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .dog-quotes {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer {
+        padding: 14px;
+    }
+}
