@@ -100,10 +100,106 @@ section.container {
     margin-bottom: 20px;
 }
 
-.footer {
+.footer-container {
     font-family:Georgia, 'Times New Roman', Times, serif;
     border-top: 8px solid purple;
     padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* About Page Styles */
+
+.about-header {
+    border-bottom: 8px solid purple;
+    margin-bottom: 3.2rem;
+}
+
+.logo-container {
+    padding: 1.6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.about_header_logo-pic img {
+    border-radius: 50%;
+    border: 1px solid purple;
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    align-items: center;
+}
+
+.main-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.about-container {
+    border-top: 8px solid purple;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column
+}
+
+/* Dog Fun Page Styles */
+
+.fun-header {
+    border-bottom: 8px solid purple;
+    margin-bottom: 3.2rem;
+}
+
+.fun-container {
+    padding: 1.6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.fun_header_logo-pic img {
+    border-radius: 50%;
+    border: 1px solid purple;
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1;
+    margin: 0 0 1rem;
+}
+
+.main-fun {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.fun-footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-top: 8px solid purple;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 @media (min-width:500px) {
@@ -146,17 +242,18 @@ section.container {
         margin-bottom: 5px;
     }
 
-    .dog-quote, .dog-quotes {
+    .dog-quote, .dog-quotes img {
         align-items: center;
     }
 
-    .footer {
+    .footer-container {
         padding: 12px;
     }
 }
 
 @media (min-width: 768px) {
-    .main h1 {
+    /* Home Page Styles */
+    .main h1  {
         flex-direction: row;
         max-width: 768px;
         justify-content: center;
@@ -169,9 +266,8 @@ section.container {
 
     section.container {
         display: flex;
-        /*flex-direction: column;*/
+        flex-direction: column;
         align-items: center;
-        /*justify-content: center;*/
     }
 
     .rescue-pic img {
@@ -191,12 +287,28 @@ section.container {
         align-items: center;
     }
 
-    .dog-quotes {
+    .dog-quotes img {
         display: flex;
         align-items: center;
     }
 
-    .footer {
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        padding: 14px
+    }
+
+    /* About Page Styles */
+    .about-container {
+        display: flex;
+        flex-direction: row;
         padding: 14px;
+    }
+
+    /* Dog Fun Page Styles */
+    .fun-footer-container {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
     }
 }
