@@ -144,6 +144,41 @@ section.container {
     max-width: 800px;
 }
 
+.star-rating {
+    display: inline-block;
+}
+
+.star {
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5px;
+}
+
+.star:hover, .star:hover {
+    color: purple;
+}
+
+.star.selected {
+    color: purple;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid purple;
+    background-color: white;
+    color: purple;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color:rgb(187, 167, 201)
+}
+
 .about-container {
     border-top: 8px solid purple;
     padding: 20px;
