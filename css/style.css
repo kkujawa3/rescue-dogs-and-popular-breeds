@@ -154,14 +154,15 @@ section.container {
     cursor: pointer;
     display: inline-block;
     padding: 0.5px;
+    transition: color 0.2s ease;
 }
 
-.star:hover, .star:hover {
+.star.filled {
     color: purple;
 }
 
-.star.selected {
-    color: purple;
+.star:hover {
+    color: gold;
 }
 
 button {
