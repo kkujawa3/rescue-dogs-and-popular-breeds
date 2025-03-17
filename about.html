@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>About Us</title>
 </head>
 <body>
@@ -30,20 +30,21 @@
        <h4>The Gift of a Rescue Dog's Love</h4>
        <p>What they give us</p>
 
-       <h5>How does a dog's love make you feel</h5>
-       <p>Rating</p>
+       <h4>How does a dog's love make you feel</h5>
 
-       <div class="star-rating">
-          <ul>
-            <li data-value="1" class="star">&#9733;</li>
-            <li data-value="2" class="star">&#9733;</li>
-            <li data-value="3" class="star">&#9733;</li>
-            <li data-value="4" class="star">&#9733;</li>
-            <li data value="5" class="star">&#9733;</li>
-          </ul>
+       <p class="user-message"><b>Please select a star rating!</b></p>
+
+       <div class="star-ratings">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data value="5">&#9733;</span>
        </div>
+
        <!--Displays the current rating by user-->
-       <p>Rating:<span id="rating-value">0/5</span></p>
+       <p>Rating: <span id="rating">0/5</span></p>
+       <p class="text"><b>Thoughtful Note: <span id="guest-message"></span></b></p>
 
        <!--Resets the rating for next user-->
        <button id="reset-button">Reset Rating</button>

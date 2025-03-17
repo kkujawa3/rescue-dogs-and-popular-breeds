@@ -144,8 +144,15 @@ section.container {
     max-width: 800px;
 }
 
-.star-rating {
+.user-message {
+    font-style:italic;
+    color: purple;
+}
+
+.star-ratings {
     display: inline-block;
+    /*font-size: 40px;
+    color: black;*/
 }
 
 .star {
@@ -155,14 +162,16 @@ section.container {
     display: inline-block;
     padding: 0.5px;
     transition: color 0.2s ease;
+    cursor: pointer;
 }
 
-.star.filled {
+.star.selected {
     color: purple;
 }
 
-.star:hover {
-    color: gold;
+.text {
+    font-style:italic;
+    color: purple;
 }
 
 button {
@@ -174,10 +183,6 @@ button {
     background-color: white;
     color: purple;
     border-radius: 5px;
-}
-
-button:hover {
-    background-color:rgb(187, 167, 201)
 }
 
 .about-container {
