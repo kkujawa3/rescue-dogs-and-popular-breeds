@@ -147,12 +147,11 @@ section.container {
 .user-message {
     font-style:italic;
     color: purple;
+    align-items: center;
 }
 
 .star-ratings {
     display: inline-block;
-    /*font-size: 40px;
-    color: black;*/
 }
 
 .star {
@@ -161,7 +160,6 @@ section.container {
     cursor: pointer;
     display: inline-block;
     padding: 0.5px;
-    transition: color 0.2s ease;
     cursor: pointer;
 }
 
@@ -290,6 +288,19 @@ h1 {
     .footer-container {
         padding: 12px;
     }
+
+    /* About Page Styles */
+    .main-about {
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -340,6 +351,13 @@ h1 {
     }
 
     /* About Page Styles */
+
+    .main-about {
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+
+    }
     .about-container {
         display: flex;
         flex-direction: row;
@@ -347,6 +365,11 @@ h1 {
     }
 
     /* Dog Fun Page Styles */
+
+    .main-fun {
+        flex-direction: column;
+
+    }
     .fun-footer-container {
         display: flex;
         flex-direction: row;
