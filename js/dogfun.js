@@ -2,10 +2,9 @@
 
 // Start here
 // Doughnut Chart answer from Form Question 2
-const barCtx = document.getElementById('myBarChart').getContent('2d');
-
-let question2 = [];
-let question2Count = [];
+/*
+let answers = [];
+let answersCount = [];
 
 let chartData = {
   labels: [],
@@ -19,26 +18,25 @@ let chartData = {
 
 const doughnutCtx = document.getElementById('myDoughnutChart').getContext('2d');
 const myDoughnutChart = new Chart(doughnutCtx, {
-    type: 'doughnut',
-    data: chartData,
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {
-          position: 'top',
-        },
-        tooltip: {
-          callbacks: {
-            label: function(tooltipItem) {
-              return tooltipItem.label + ': ' + tooltipItem.raw + 'votes';
-            }
+  type: 'doughnut',
+  data: chartData,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      tooltip: {
+        callbacks: {
+          label: function(tooltipItem) {
+            return tooltipItem.label + ': ' + tooltipItem.raw + 'votes';
           }
         }
       }
     }
+  }
 });
 
- 
 function submitAnswer() {
   const userAnswer = doocument.getElementById('question2').value.trim();
   if(userAnswer) {
@@ -52,14 +50,14 @@ function submitAnswer() {
      chartData.datasets[0].data[answerIndex] = answerCount[answerIndex];
     } else {
      answers.push(userAnswer);
-     answerCount.push[1];
+     answerCount.push(1);
      chartData.labels.push(userAnswer);
      chartData.datasets[0].data.push(1);
      chartData.datasets[0].backgroundColor.push(getRandomColor());
-     chartData.datasets[0].hoverBackgroundColor.push(getRandomColor());
+     chartData.datasets[0].hoverbckgroundColor.push(getRandomColor());
     }
     updateChart();
-    document.getElementById('userANswersInput').value = '';
+    document.getElementById('question2').value = '';
 };
 
 function updateChart() {
@@ -67,21 +65,38 @@ function updateChart() {
 }
 
 function getRandomColor() {
-  return `hsl($Math.random() * 360}, 70%, 70%)`;
-}
+  return `hsl(${Math.random() * 360}, 70%, 70%)`;
+}*/
+
+
 /*
+// Start here for Bar Chart 
 // Bar Chart answer from Form Question 3
 
-let myBarChart = new Chart(barCtx, {
-    type: 'bar',
-    data: {
-      labels: ['Dog Trick'],   // need to check this
-      datasets: [{
-        data: [' '],           // need to chcek this
-        backgroundColor: ['#ff6385'],
-      }]
+let answers3 = [];
+let answersCount3 = [];
+
+const barCtx = document.getElementById('myBarChart').getContent('2d);
+const myBarChart = new Chart(barCtx, {
+  type: 'bar',
+  data: chartData,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      tooltip: {
+        callbacks: {
+          label: function(tooltipItem) {
+            return tooltipItem.label + '+ ' + tooltipItem.raw + ' votes';
+          }
+        }
+      }
     }
-});*/
+  }
+})
+*/
 
 //get form answers
 
