@@ -1,21 +1,75 @@
 "use strict";
 
-  // Start here
-  // Doughnut Chart answer from Form Question 2
-/*const doughnutCtx = document.getElementById('myDoughnutChart').getContext('2d');
+// Start here
+// Doughnut Chart answer from Form Question 2
 const barCtx = document.getElementById('myBarChart').getContent('2d');
 
-let myDoughnutChart = new Chart(doughnutCtx, {
+let question2 = [];
+let question2Count = [];
+
+let chartData = {
+  labels: [],
+  datasets: [{
+    label: 'Votes',
+    data: [],
+    backgroundColor: [],
+    hoverbckgroundColor: [],
+  }]
+};
+
+const doughnutCtx = document.getElementById('myDoughnutChart').getContext('2d');
+const myDoughnutChart = new Chart(doughnutCtx, {
     type: 'doughnut',
-    data: {
-      labels: ['Dog Breed'], // need to check this
-      datasets: [{
-        data: [' '],    // check this
-        backgroundColor: ['#ff6384'],
-      }]
+    data: chartData,
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        tooltip: {
+          callbacks: {
+            label: function(tooltipItem) {
+              return tooltipItem.label + ': ' + tooltipItem.raw + 'votes';
+            }
+          }
+        }
+      }
     }
 });
 
+ 
+function submitAnswer() {
+  const userAnswer = doocument.getElementById('question2').value.trim();
+  if(userAnswer) {
+    const answerIndex = answers.findIndex(answer => answer.toLowerCase() === userAnswer.toLowerCase());
+  } else {
+    alert("Please enter an answer");
+  }
+
+   if(answerIndex !== -1) {
+     answerCount[answerIndex]++;
+     chartData.datasets[0].data[answerIndex] = answerCount[answerIndex];
+    } else {
+     answers.push(userAnswer);
+     answerCount.push[1];
+     chartData.labels.push(userAnswer);
+     chartData.datasets[0].data.push(1);
+     chartData.datasets[0].backgroundColor.push(getRandomColor());
+     chartData.datasets[0].hoverBackgroundColor.push(getRandomColor());
+    }
+    updateChart();
+    document.getElementById('userANswersInput').value = '';
+};
+
+function updateChart() {
+  myDoughnutChart.update();
+}
+
+function getRandomColor() {
+  return `hsl($Math.random() * 360}, 70%, 70%)`;
+}
+/*
 // Bar Chart answer from Form Question 3
 
 let myBarChart = new Chart(barCtx, {
@@ -34,7 +88,7 @@ let myBarChart = new Chart(barCtx, {
 // display answers to Question 1
 //document.getElementById('answer1Display').textContent = `Your Rescue Dog Name is: ${answer1}`;
 
-// Testing the three questions
+// Testing the three questions on the way form works currently without chart
 document.getElementById('questionForm').addEventListener('submit', function(event) {
   event.preventDefault();
   //Retrieve and display answer to Question 1
@@ -59,5 +113,4 @@ function clearDisplay () {
 // Reset form next user
 document.getElementById('reset-button').addEventListener('click', clearDisplay);
 
-// Retrieve answers to questions in an array
 
