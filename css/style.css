@@ -137,6 +137,11 @@ section.container {
     max-width: 800px;
 }
 
+input {
+    border: 1px solid purple;
+    background-color: white;
+}
+
 .user-message {
     font-style:italic;
     color: purple;
