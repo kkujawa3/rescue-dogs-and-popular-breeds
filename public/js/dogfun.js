@@ -1,5 +1,48 @@
 "use strict";
 
+/*
+document.getElementById('questionForm').addEventListener('submit', function(event) {   //access the form
+  event.preventDefault();
+  const doughnutCtx = document.getElementById('myDoughnutChart').getContext('2d');     // get the context of canvas element
+  const myDoughnutChart = new Chart(doughnutCtx, {
+    type: 'doughnut',
+    data: {
+      labels: [],
+      datasets: [{
+        label: 'Dog Breeds',
+        data: ['question2'],                 // chart data
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+        ],
+        borderwidth: 1
+      }]
+    },
+  });
+});
+
+function clearDisplay () {
+  //document.getElementById('displayQuestion1').innerText = '';
+  document.getElementById('displayQuestion2').innerText = '';
+  //document.getElementById('displayQuestion3').innerText = '';
+}
+// Reset form next user
+document.getElementById('reset-button').addEventListener('click', clearDisplay);
+*/
+
+// display answers to Question 1
+// document.getElementById('answer1Display').textContent = `Your Rescue Dog Name is: ${answer1}`;
+
 // Start here
 // Doughnut Chart answer from Form Question 2
 /*
@@ -127,5 +170,3 @@ function clearDisplay () {
 }
 // Reset form next user
 document.getElementById('reset-button').addEventListener('click', clearDisplay);
-
-
