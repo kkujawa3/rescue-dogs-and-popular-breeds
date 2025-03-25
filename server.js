@@ -23,7 +23,7 @@ async function getRandomPhoto() {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        const receivedPhoto = data.urls.regular;
+        const receivedPhoto = data[0].url;
         return receivedPhoto;
     } catch (error) {
         console.log(error);

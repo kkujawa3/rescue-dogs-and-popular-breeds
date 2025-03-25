@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/Chart.min.js"></script>-->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.min.js"></script>
     <title>Dog Fun</title>
 </head>
 <body>
@@ -36,7 +34,6 @@
             <input type="text" id="question3" name="question3"><br><br>
 
             <button type="submit">Submit</button>
-            <!--<button onclick="submitAnswer()">Submit</button>-->
             <button type="reset" id="reset-button">Reset</button>
         </form><br><br>
 
@@ -44,20 +41,27 @@
         <h3>Rescue Dog Name</h3>
         <p id="displayQuestion1"></p><br><br>
 
-        <!--Doughnut Chart Header-->
+        <!--Favorite Dog Breed Displayed-->
         <h3>Favorite Dog Breed</h3>
         <p id="displayQuestion2"></p><br><br>
-        <!--<canvas id="myDoughnutChart" width="400" height="400"></canvas>-->
 
-        <!--Bar Chart Header-->
+        <!--Trick taught to your rescue dog displayed-->
         <h3>Dog Tricks</h3>
         <p id="displayQuestion3"></p><br><br>
-        <!--<canvas id="myBarChart" width="400" height="400"></canvas>-->
 
         <!--Form for input validation-->
-        <h3>Question on how many dogs</h3>
-        <!--<input type="text" id="autocomplete" placeholder="Select a color"></input>-->
-        <!--<button type="submits">Submit</button>-->
+        <h3>How many dogs in your family</h3>
+        <form id="amountForm">
+            <label for="amountInput">Please share how many dogs do you have</label>
+            <input type="text" id="amountInput" name="amountInput" required>
+            <button type="submit">Submit Amount</button>
+            <button type="reset">Reset Amount</button>
+        </form>
+
+        <!--Handles the messages to user-->
+        <p id="message"></p>
+        <p id="errorMessage"></p>
+        <button type="reset" id="resetButton">Reset Message</button>
 
     </main>
 

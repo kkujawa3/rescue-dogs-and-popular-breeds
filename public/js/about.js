@@ -60,8 +60,6 @@ stars.forEach(star => {
     }
   });
 });
-//const resetBtn = document.getElementById(reset);
-//document.getElementById('userForm').reset();
 
 // Clear rating from reset button for next user
 resetButton.addEventListener('click', function () {

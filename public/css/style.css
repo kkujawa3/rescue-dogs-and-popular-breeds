@@ -209,6 +209,14 @@ h1 {
     margin-left: 10%;
 }
 
+#errorMessage {
+    color: red;
+}
+
+#message {
+    color: purple;
+}
+
 @media (min-width:500px) {
     /* Home Page Styles*/
     .main h1 {
