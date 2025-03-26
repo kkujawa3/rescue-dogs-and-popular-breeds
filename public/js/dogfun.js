@@ -40,7 +40,7 @@ document.getElementById('amountForm').addEventListener('submit', function(event)
 
   if(amountRegex.test(amountInput)) {
     errorMessage.innerText = '';
-    message.innerText = "You have entered a valid number successfully, thank you for sharing";
+    message.innerText = "Your answer is: " + amountInput + " ! " + " You have entered a valid number of dogs successfully, thank you for sharing";
   } else {
     errorMessage.innerText = "Error, Please enter a valid number";
     message.innerText = '';
