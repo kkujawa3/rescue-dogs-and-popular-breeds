@@ -1,11 +1,11 @@
 "use strict";
-/*
+
 const el = {
     dog: document.getElementById("dog"),
 };
 
 async function getRandomPhoto() {
-    const url = "http://localhost:1776/api/getRandomImage";       // access key goes here
+    const url = "http://localhost:1776/api/getRandomImage";     
     try {
         const response = await fetch(url);
         const data: await response.json();
@@ -16,4 +16,4 @@ async function getRandomPhoto() {
     } catch (error) {
         console.log(error);    }
 }
-getRandomPhoto();*/
+getRandomPhoto();
