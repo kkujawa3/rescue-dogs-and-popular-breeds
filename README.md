@@ -12,26 +12,29 @@ Technologies tools used for the project: VS Code, Chrome, Git, Guthub, Node,js, 
 Express.js and Cors. 
 
 ### Project Features
+Responsive Design
+* This project uses media queries and flexbox for multiple design approach for multiple screen sizes
+
 
 
 ### Project Pages
 * Landing Page: This page gives the user an overview and options for navigation of web application.
 * About Us: The About page shares my experiences with rescues and interaction with the user.
 * Dog Fun: The Dog Fun page allows the user to have interaction fun about dogs.
-* Dog Rescue: Using a third-party dog api allows the user to see dog related information.
+* Dog Rescue: Using a third-party dog api allows the user to see dog related photo and information.
 
 ### Installation
-1. Visit the Dog API webpage to retrieve your free Dog API key
+1. Visit the Dog API webpage to retrieve your free Dog API key:https://thedogapi.com/
 2. You will then be receiving an email containing your API key in it
-3. Install Node.js. If you do not have node.js, please visit nodejs.org.
+3. Install Node.js. If you do not have node.js, please visit: https://nodejs.org/en
 4. Open your terminal and run node -v and npm -v. These versions should be v.20.18.0 and 10.8.2.
 5. Clone the respository to your local machine using Git: git clone 
-6. CD into the project directory.
-7. To add your API key using Visual Studio Code, open project with code .
-8. Take your free API key and add it inside the env file.
-8. Run npm install to install required packages.
+6. CD into the project directory
+7. To add your API key using Visual Studio Code, open project with: code . 
+8. Take your free API key and add it inside the env file
+8. Run npm install to install required packages
 9. After packages are installed, you can run: npm run dev
-10. In your browser, go to localhost:1776 which will take you to the project landing page.
+10. In your browser, go to localhost:1776 which will take you to the project landing page
 11. To stop the project from running: Ctrl+C
 
 
