@@ -1,8 +1,8 @@
 "use strict";
 
-const el = {
+/*const el = {
     dog: document.getElementById("dog"),
-};
+};*/
 
 async function getRandomPhoto() {
     const url = "http://localhost:1776/api/getRandomImage";     
@@ -17,8 +17,8 @@ async function getRandomPhoto() {
         const dogTemperament = data.data.temperament;
 
         const dogPic = document.getElementById("dog-photo");
-        const dogBreed = document.getElementById("dog-breed");
-        const dogTemperament = document.getElementById("dog-temperament");
+        const dogBreeds = document.getElementById("dog-breed");
+        const dogTemperaments = document.getElementById("dog-temperament");
         
     } catch (error) {
         console.log(error);  

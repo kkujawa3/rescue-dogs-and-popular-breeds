@@ -12,12 +12,12 @@ function storeInput() {
 
 // Function to display the stored inputs by creating a list
 function displayInputs() {
-  const outputDiv = document.getElementById('output');
-  outputDiv.innerHTML = '';
+  const outputList = document.getElementById('output');
+  outputList.innerHTML = '';
   userInputArray.forEach((input, index) => {
     const p = document.createElement('p');
     p.textContent = `Visitor ${index + 1}: ${input}`;
-    outputDiv.appendChild(p);
+    outputList.appendChild(p);
   });
 }
 

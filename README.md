@@ -3,7 +3,7 @@ Rescue Dogs and Popular Breeds
 
 ## Overview
 Rescue Dogs and Popular Breeds is a fictional Dog Rescue which is aimed to bringing awareness about rescue dogs. 
-This project was made for my passion for dogs and wanting to bring more awareness to them.
+This project was made for my passion and love for dogs and wanting to bring more awareness to them.
 The project is fun, user-friendly interaction and has a rescue dog photo breed information page.
 The goal of the project is to demonstrate a general knowledge of HTML, CSS, and Javascript.
 
@@ -15,10 +15,10 @@ Express.js and Cors.
 
 
 ### Project Pages
-* Landing Page:
-* About Us:
-* Dog Fun:
-* Dog Rescue:
+* Landing Page: This page gives the user an overview and options for navigation of web application.
+* About Us: The About page shares my experiences with rescues and interaction with the user.
+* Dog Fun: The Dog Fun page allows the user to have interaction fun about dogs.
+* Dog Rescue: Using a third-party dog api allows the user to see dog related information.
 
 ### Installation
 1. Visit the Dog API webpage to retrieve your free Dog API key
