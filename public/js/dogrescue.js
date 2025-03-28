@@ -3,7 +3,7 @@
 /*const el = {
     dog: document.getElementById("dog"),
 };*/
-
+// Function to fetch images from the server
 async function getRandomPhoto() {
     const url = "http://localhost:1776/api/getRandomImage";     
     try {
@@ -26,6 +26,6 @@ async function getRandomPhoto() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function()  {
     getRandomPhoto();
 });

@@ -9,13 +9,22 @@ The goal of the project is to demonstrate a general knowledge of HTML, CSS, and 
 
 ## Technologies Used
 Technologies tools used for the project: VS Code, Chrome, Git, Guthub, Node,js, NPM, Nodemon, 
-Express.js and Cors. 
+Express.js, Cors and Dog API. 
 
 ### Project Features
-Responsive Design
-* This project uses media queries and flexbox for multiple design approach for multiple screen sizes
+* Responsive Design
+This project uses media queries and flexbox for multiple design approach for multiple screen sizes
 
+* Use Arrays, objects to store and retrieve information
+The user input for considering adopting a dog is stored in an array and displayed on the About Us Page
 
+* Use a regular expression to validate user input and inform user about it or prevent it
+Found on the dog fun page, the user input for how many dogs in your family is validated with regex by checking if 
+the user input is a positive number which also includes zero as an answer. If it is valid, returns a message to 
+user letting them know it is a postiive number entered otherwise a message to user is displayed that it is not a valid input
+
+* Retrieve data from a third-party API and use it to display someting in your app
+Utlized a third-party dog API and displayed dog data information from it on the dog rescue page
 
 ### Project Pages
 * Landing Page: This page gives the user an overview and options for navigation of web application.
