@@ -1,8 +1,6 @@
 "use strict";
 
-/*const el = {
-    dog: document.getElementById("dog"),
-};*/
+
 // Function to fetch images from the server
 async function getRandomPhoto() {
     const url = "http://localhost:1776/api/getRandomImage";     

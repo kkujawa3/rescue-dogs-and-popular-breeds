@@ -24,7 +24,7 @@ the user input is a positive number which also includes zero as an answer. If it
 user letting them know it is a postiive number entered otherwise a message to user is displayed that it is not a valid input
 
 Retrieve data from a third-party API and use it to display someting in your app
-* Utlized a third-party dog API and displayed dog data information from it on the dog rescue page
+* Utilized a third-party dog API and displayed dog data information from it on the dog rescue page
 
 ### Project Pages
 * Landing Page: This page gives the user an overview and options for navigation of web application.
@@ -37,13 +37,13 @@ Retrieve data from a third-party API and use it to display someting in your app
 2. You will then be receiving an email containing your API key in it
 3. Install Node.js. If you do not have node.js, please visit: https://nodejs.org/en
 4. Open your terminal and run node -v and npm -v. These versions should be v.20.18.0 and 10.8.2.
-5. Clone the respository to your local machine using Git: git clone 
+5. Clone the respository to your local machine using Git: git clone https://github.com/kkujawa3/rescue-dogs-and-popular-breeds
 6. CD into the project directory
 7. To add your API key using Visual Studio Code, open project with: code . 
 8. Take your free API key and add it inside the env file
 8. Run npm install to install required packages
 9. After packages are installed, you can run: npm run dev
-10. In your browser, go to localhost:1776 which will take you to the project landing page
+10. In your browser, go to http://localhost:1776 which will take you to the project landing page
 11. To stop the project from running: Ctrl+C
 
 
