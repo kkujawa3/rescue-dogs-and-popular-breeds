@@ -11,12 +11,20 @@ async function getRandomPhoto() {
         console.log("Response JSON Data:", data);
 
         const receivedPhoto = data.data.photo;
+        console.log("Received Photo URL:", receivedPhoto);
         const dogBreed = data.data.breed;
+        console.log("received breed" , dogBreed);
         const dogTemperament = data.data.temperament;
+        console.log("Received temperament", dogTemperament);
 
-        const dogPic = document.getElementById("dog-photo");
+        //const dogPic = document.getElementById("dog-photo");
+        const dogPic = document.querySelector(".dog-img");
         const dogBreeds = document.getElementById("dog-breed");
         const dogTemperaments = document.getElementById("dog-temperament");
+
+        dogPic.style.dogImage = `url(${receivedPhoto})`;
+        dogBreeds.textContent = dogBreed;
+        dogTemperaments.textContent = dogTemperament;
         
     } catch (error) {
         console.log(error);  
