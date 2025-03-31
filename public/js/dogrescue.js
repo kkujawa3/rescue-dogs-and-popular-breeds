@@ -17,12 +17,11 @@ async function getRandomPhoto() {
         const dogTemperament = data.data.temperament;
         console.log("Received temperament", dogTemperament);
 
-        //const dogPic = document.getElementById("dog-photo");
         const dogPic = document.querySelector(".dog-img");
         const dogBreeds = document.getElementById("dog-breed");
         const dogTemperaments = document.getElementById("dog-temperament");
 
-        dogPic.style.dogImage = `url(${receivedPhoto})`;
+        dogPic.style.backgroundImage = `url(${receivedPhoto})`;
         dogBreeds.textContent = dogBreed;
         dogTemperaments.textContent = dogTemperament;
         
@@ -35,3 +34,7 @@ async function getRandomPhoto() {
 document.addEventListener("DOMContentLoaded", function()  {
     getRandomPhoto();
 });
+
+setInterval(getRandomPhoto, 5000);
+
+document.getElementById(submit-btn).addEventListener("click", getRandomPhoto);
