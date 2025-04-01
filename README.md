@@ -40,11 +40,12 @@ Retrieve data from a third-party API and use it to display someting in your app
 5. Clone the respository to your local machine using Git: git clone https://github.com/kkujawa3/rescue-dogs-and-popular-breeds
 6. CD into the project directory
 7. To add your API key using Visual Studio Code, open project with: code . 
-8. Take your free API key and add it inside the env file
-8. Run npm install to install required packages
-9. After packages are installed, you can run: npm run dev
-10. In your browser, go to http://localhost:1776 which will take you to the project landing page
-11. To stop the project from running: Ctrl+C
+8. Create a .env file in the explorer section
+9. Take your free API key and add it inside the env file by entering CLIENT_ID=YOUR_API_KEY_GOES_HERE
+10. Run npm install to install required packages
+11. After packages are installed, you can run: npm run dev
+12. In your browser, go to http://localhost:1776 which will take you to the project landing page
+13. To stop the project from running: Ctrl+C
 
 
 
