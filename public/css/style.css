@@ -40,7 +40,7 @@ body {
 }
 
 h1 {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   line-height: 1;
   align-items: center; 
   font-size: 40px;
@@ -289,7 +289,7 @@ p{
 
 @media (min-width:500px) {
     /* Home Page Styles*/
-    .main h1 {
+    .main, h1  {
         flex-direction: column;
         max-width: 500px;
         justify-content: center;
@@ -350,7 +350,7 @@ p{
         max-width: none;
     }
 
-    .main h1  {
+    .main, h1  {
         flex-direction: row;
         max-width: 768px;
         justify-content: center;

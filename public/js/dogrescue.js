@@ -35,6 +35,5 @@ document.addEventListener("DOMContentLoaded", function()  {
     getRandomPhoto();
 });
 
-setInterval(getRandomPhoto, 5000);
+setInterval(getRandomPhoto, 10000);
 
-document.getElementById(submit-btn).addEventListener("click", getRandomPhoto);
