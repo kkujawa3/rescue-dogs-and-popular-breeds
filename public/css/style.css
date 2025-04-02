@@ -39,7 +39,7 @@ body {
     max-width: 420px;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   line-height: 1;
   align-items: center; 
@@ -59,7 +59,6 @@ h1 {
 section.container {
     display: flex;
     flex-direction: column;
-    font-size: 24px;
     padding: 1.6rem;
     width: 100%;
     align-items: center;
@@ -87,7 +86,7 @@ section.container {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem;
+    padding: 10px 20px;
     gap: 10px;
 }
 
@@ -208,10 +207,6 @@ button {
     max-width: 1000px;
 }
 
-h2 {
-    color: purple;
-}
-
 .main-fun {
     display: flex;
     flex-direction: column;
@@ -270,12 +265,10 @@ h1 {
     color: purple;
 }
 
-/*p {
+p {
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    padding: 20px;
-    margin-left: 10%;
-}*/
+    font-size: 24px;
+}
 
 #submit-btn {
     margin-top: 20px;
@@ -321,6 +314,26 @@ h1 {
         margin-bottom: 5px;
     }
 
+    .dog-quote {
+        height: auto;
+        width: 300px;
+    }
+
+    .dog-quote img {
+        height: auto;
+        width: 300px;
+    }
+
+    .dog-quotes {
+        height: auto;
+        width: 300px;
+    }
+
+    .dog-quotes img {
+        height: auto;
+        width: 300px;
+    }
+
     .dog-quote, .dog-quotes img {
         align-items: center;
     }
@@ -333,6 +346,7 @@ h1 {
         max-width: none;
     }
 
+    /* Dog Fun Styles */
     .main-fun {
         flex-direction: column;
         max-width: none;
@@ -361,6 +375,12 @@ h1 {
         flex-direction: column;
     }
 
+    img {
+        max-width: none;
+        height: auto;
+        width: 600px;
+    }
+
     .btn-container {
         display: flex;
         flex-direction: row;
@@ -372,9 +392,26 @@ h1 {
         align-items: center;
     }
 
+    .dog-quote {
+        height: auto;
+        width: 400px;
+    }
+
+    .dog-quote img {
+        height: auto;
+        width: 400px;
+        max-width: none;
+    }
+
+    .dog-quotes {
+        height: auto;
+        width: 400px;
+    }
+
     .dog-quotes img {
-        display: flex;
-        align-items: center;
+        height: auto;
+        width: 400px;
+        max-width: none;
     }
 
     .footer-container  {
