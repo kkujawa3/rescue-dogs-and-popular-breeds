@@ -132,6 +132,14 @@ section.container {
     max-width: 1000px;
 }
 
+h2 {
+    padding-bottom: 20px;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
 .main-about {
     display: flex;
     flex-direction: column;
@@ -239,7 +247,6 @@ button {
 
 h1 {
     padding: 10px;
-    margin-left: 5%;
 }
 
 .main-dog {
@@ -251,11 +258,11 @@ h1 {
 }
 
 .dog-img {
-    height: 800px;
-    width: 1000px;
-    padding: 20px;
-    margin-left: 10%;
-    object-fit: contain;
+    height: 350px;
+    width: 500px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .breed-dog, .temperament-dog {
@@ -299,8 +306,8 @@ p {
     }
 
     .rescue-pic img {
-        margin-right: 20px;
         flex-direction: row;
+        width: 200px;
     }
 
     .btn-container  {
@@ -352,6 +359,15 @@ p {
         flex-direction: column;
         max-width: none;
     }
+
+    /* Dog Rescue Page Styles */
+    .dog-img {
+        width: 450px;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
 @media (min-width: 768px) {
@@ -371,9 +387,15 @@ p {
         align-items: center;
     }
 
+    .rescue-pic {
+        flex-direction: row;
+    }
+
     .rescue-pic img {
         display: flex;
         flex-direction: column;
+        width: 250px;
+        height: auto;
     }
 
     img {
@@ -424,7 +446,6 @@ p {
     }
 
     /* About Page Styles */
-
     .main-about {
         flex-direction: column;
         padding: 20px;
@@ -434,9 +455,18 @@ p {
     }
 
     /* Dog Fun Page Styles */
-
     .main-fun {
         flex-direction: column;
         max-width: none;
     }
+
+    /* Dog Rescue Page Styles */
+    .dog-img {
+        width: 720px;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat:no-repeat;
+    }
+
 }
