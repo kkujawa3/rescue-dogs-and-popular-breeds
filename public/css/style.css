@@ -223,6 +223,7 @@ button {
 #displayQuestion2, 
 #displayQuestion3 {
     color: purple;
+    font-size: 28px;
 }
 
 #errorMessage {
