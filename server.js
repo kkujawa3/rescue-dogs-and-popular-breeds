@@ -19,6 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 async function getRandomPhoto() {
+    // Use process.env to access the key
     const url = `https://api.thedogapi.com/v1/images/search?has_breeds=true&api_key=${process.env.CLIENT_ID}`;
     try {
         const response = await fetch(url);

@@ -31,9 +31,11 @@ async function getRandomPhoto() {
     }
 }
 
+// Call the function to get a random photo
 document.addEventListener("DOMContentLoaded", function()  {
     getRandomPhoto();
 });
 
+// Calls the function at specified intervals in milliseconds
 setInterval(getRandomPhoto, 10000);
 

@@ -21,7 +21,9 @@ Use Arrays, objects to store and retrieve information
 Use a regular expression to validate user input and inform user about it or prevent it
 * Found on the dog fun page, the user input for how many dogs in your family is validated with regex by checking if 
 the user input is a positive number which also includes zero as an answer. If it is valid, returns a message to 
-user letting them know it is a postiive number entered otherwise a message to user is displayed that it is not a valid input
+user letting them know it is a postiive number entered otherwise a message to user is displayed that it is not a valid input.
+Using my backup feature here rather than my original plan for a smoother flow of page design. I have a future build-out
+goal in mind using more of my Dog API data for creating a search implementation for user.
 
 Retrieve data from a third-party API and use it to display someting in your app
 * Utilized a third-party dog API and displayed dog data information from it on the dog rescue page
